@@ -1,7 +1,6 @@
 import {
   GradientText,
   HeroAvatar,
-  HeroSocial,
   Section,
 } from 'astro-boilerplate-components';
 
@@ -36,37 +35,62 @@ const Hero = () => (
         <img
           className="h-auto w-64 rounded-3xl"
           src="/assets/images/avatar.png"
-          alt="Avatar image"
+          alt="Avatar"
           loading="lazy"
         />
       }
       socialButtons={
-        <>
-          <a href="/">
-            <HeroSocial src="/assets/images/twitch.svg" alt="Twitch icon" />
-          </a>
-          <a href="/">
-            <HeroSocial src="/assets/images/youtube.svg" alt="Youtube icon" />
-          </a>
-          <a href="/">
-            <HeroSocial src="/assets/images/tiktok.svg" alt="TikTok icon" />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/instagram.svg"
-              alt="Instagram icon"
+        <div className="flex w-2/3 justify-evenly">
+          <a href="/" aria-label="Visite a página do Twitch">
+            <img
+              src="/assets/images/twitch.svg"
+              alt="Twitch icon"
+              className="w-12"
             />
           </a>
-          <a href="/">
-            <HeroSocial src="/assets/images/discord.svg" alt="Discord icon" />
+          <a href="/" aria-label="Visite a página do Youtube">
+            <img
+              src="/assets/images/youtube.svg"
+              alt="Youtube icon"
+              className="w-12"
+            />
           </a>
-          <a href="/">
-            <HeroSocial src="/assets/images/twitterX.png" alt="Twitter icon" />
+          <a href="/" aria-label="Visite a página do TikTok">
+            <img
+              src="/assets/images/tiktok.svg"
+              alt="TikTok icon"
+              className="w-12"
+            />
           </a>
-          <a href="/">
-            <HeroSocial src="/assets/images/facebook.svg" alt="Facebook icon" />
+          <a href="/" aria-label="Visite a página do Instagram">
+            <img
+              src="/assets/images/instagram.svg"
+              alt="Instagram icon"
+              className="w-12"
+            />
           </a>
-        </>
+          <a href="/" aria-label="Visite a página do Discord">
+            <img
+              src="/assets/images/discord.svg"
+              alt="Discord icon"
+              className="w-12"
+            />
+          </a>
+          <a href="/" aria-label="Visite a página do Twitter">
+            <img
+              src="/assets/images/twitterX.png"
+              alt="Twitter icon"
+              className="w-12"
+            />
+          </a>
+          <a href="/" aria-label="Visite a página do Facebook">
+            <img
+              src="/assets/images/facebook.svg"
+              alt="Facebook icon"
+              className="w-12"
+            />
+          </a>
+        </div>
       }
     />
   </Section>
