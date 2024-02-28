@@ -24,4 +24,7 @@ export default defineConfig({
     robotsTxt(),
     astroImageTools,
   ],
+  image: {
+    domains: ['w3.org'],
+  },
 });
